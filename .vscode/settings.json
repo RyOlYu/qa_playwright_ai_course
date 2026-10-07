@@ -1,7 +1,8 @@
 {
     "[typescript]": {
         "editor.defaultFormatter": "vscode.typescript-language-features",
-        "editor.formatOnSave": true
+        "editor.formatOnSave": true,
+        "editor.inlineSuggest.syntaxHighlightingEnabled": true
     },
     "[json]": {
         "editor.defaultFormatter": "vscode.json-language-features",

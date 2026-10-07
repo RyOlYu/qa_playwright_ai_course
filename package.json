@@ -6,6 +6,18 @@
   "author": "Boris_Medoshin(Tomheten)",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:server": "tsx ./server/server.mjs"
+  },
+  "devDependencies": {
+    "tsx": "4.23.15",
+    "@playwright/test": "~1.60.0",
+    "@types/node": "^26.0.0",
+    "globals": "~17.6.0",
+    "typescript": "6.0.3",
+    "vite": "8.3.3",
+    "vite-node": "6.0.0",
+    "wait-on": "9.5.1",
+    "playwright-recast": "^0.23.0"
   }
 }

@@ -1,0 +1,350 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "login": "anna",
+      "email": "anna@example.com",
+      "password_salt": "a48d3acf094da047",
+      "password_hash": "9a874f5783b49e349e25d71a14a83f771ba2b23924201463a4fb2ec2393a27af",
+      "first_name": "Анна",
+      "last_name": "Покупателева",
+      "role": "user",
+      "is_blocked": 0,
+      "created_at": "2026-10-07T13:55:18.886Z",
+      "updated_at": "2026-10-07T13:55:18.886Z"
+    },
+    {
+      "id": 2,
+      "login": "boris",
+      "email": "boris@example.com",
+      "password_salt": "85b36c4853c347bb",
+      "password_hash": "652987c3f398d746e813f8b115dc79b3ab7335d62c173465a0bd1ec0d253c53c",
+      "first_name": "Борис",
+      "last_name": "Бывший",
+      "role": "user",
+      "is_blocked": 1,
+      "created_at": "2026-10-07T13:55:18.886Z",
+      "updated_at": "2026-10-07T13:55:18.886Z"
+    },
+    {
+      "id": 3,
+      "login": "kira",
+      "email": "kira@example.com",
+      "password_salt": "5b5c0b2809a90383",
+      "password_hash": "442afaaaf46f1a8037d490597526818808a5d8e98044b393296c781b74928294",
+      "first_name": "Кира",
+      "last_name": "Админова",
+      "role": "admin",
+      "is_blocked": 0,
+      "created_at": "2026-10-07T13:55:18.886Z",
+      "updated_at": "2026-10-07T13:55:18.886Z"
+    }
+  ],
+  "sessions": [],
+  "products": [
+    {
+      "id": 1,
+      "name": "Тетрадь 48 л.",
+      "description": "Описание товара: Тетрадь 48 л.",
+      "price": 0,
+      "category": "paper",
+      "stock": 0,
+      "is_active": 1,
+      "created_at": "2026-10-06T13:55:18.886Z",
+      "updated_at": "2026-10-06T13:55:18.886Z"
+    },
+    {
+      "id": 2,
+      "name": "Тетрадь 24 л.",
+      "description": "Описание товара: Тетрадь 24 л.",
+      "price": 15800,
+      "category": "pens",
+      "stock": 1,
+      "is_active": 1,
+      "created_at": "2026-10-05T13:55:18.886Z",
+      "updated_at": "2026-10-05T13:55:18.886Z"
+    },
+    {
+      "id": 3,
+      "name": "Тетрадь 36 л.",
+      "description": "Описание товара: Тетрадь 36 л.",
+      "price": 23700,
+      "category": "notebooks",
+      "stock": 10,
+      "is_active": 1,
+      "created_at": "2026-10-04T13:55:18.886Z",
+      "updated_at": "2026-10-04T13:55:18.886Z"
+    },
+    {
+      "id": 4,
+      "name": "Тетрадь 48 л.",
+      "description": "Описание товара: Тетрадь 48 л.",
+      "price": 31600,
+      "category": "other",
+      "stock": 999,
+      "is_active": 1,
+      "created_at": "2026-10-03T13:55:18.886Z",
+      "updated_at": "2026-10-03T13:55:18.886Z"
+    },
+    {
+      "id": 5,
+      "name": "Тетрадь 60 л.",
+      "description": "Описание товара: Тетрадь 60 л.",
+      "price": 39500,
+      "category": "paper",
+      "stock": 0,
+      "is_active": 1,
+      "created_at": "2026-10-02T13:55:18.886Z",
+      "updated_at": "2026-10-02T13:55:18.886Z"
+    },
+    {
+      "id": 6,
+      "name": "Ручка синяя №6",
+      "description": "Описание товара: Ручка синяя №6",
+      "price": 47400,
+      "category": "pens",
+      "stock": 1,
+      "is_active": 1,
+      "created_at": "2026-10-01T13:55:18.886Z",
+      "updated_at": "2026-10-01T13:55:18.886Z"
+    },
+    {
+      "id": 7,
+      "name": "Ручка синяя №7",
+      "description": "Описание товара: Ручка синяя №7",
+      "price": 55300,
+      "category": "notebooks",
+      "stock": 10,
+      "is_active": 1,
+      "created_at": "2026-09-30T13:55:18.886Z",
+      "updated_at": "2026-09-30T13:55:18.886Z"
+    },
+    {
+      "id": 8,
+      "name": "Ручка синяя №8",
+      "description": "Описание товара: Ручка синяя №8",
+      "price": 63200,
+      "category": "other",
+      "stock": 999,
+      "is_active": 1,
+      "created_at": "2026-09-29T13:55:18.886Z",
+      "updated_at": "2026-09-29T13:55:18.886Z"
+    },
+    {
+      "id": 9,
+      "name": "Ручка синяя №9",
+      "description": "Описание товара: Ручка синяя №9",
+      "price": 71100,
+      "category": "paper",
+      "stock": 0,
+      "is_active": 1,
+      "created_at": "2026-09-28T13:55:18.886Z",
+      "updated_at": "2026-09-28T13:55:18.886Z"
+    },
+    {
+      "id": 10,
+      "name": "Ручка синяя №10",
+      "description": "Описание товара: Ручка синяя №10",
+      "price": 79000,
+      "category": "pens",
+      "stock": 1,
+      "is_active": 1,
+      "created_at": "2026-09-27T13:55:18.886Z",
+      "updated_at": "2026-09-27T13:55:18.886Z"
+    },
+    {
+      "id": 11,
+      "name": "Блокнот 11",
+      "description": "Описание товара: Блокнот 11",
+      "price": 86900,
+      "category": "notebooks",
+      "stock": 10,
+      "is_active": 1,
+      "created_at": "2026-09-26T13:55:18.886Z",
+      "updated_at": "2026-09-26T13:55:18.886Z"
+    },
+    {
+      "id": 12,
+      "name": "Блокнот 12",
+      "description": "Описание товара: Блокнот 12",
+      "price": 94800,
+      "category": "other",
+      "stock": 999,
+      "is_active": 1,
+      "created_at": "2026-09-25T13:55:18.886Z",
+      "updated_at": "2026-09-25T13:55:18.886Z"
+    },
+    {
+      "id": 13,
+      "name": "Блокнот 13",
+      "description": "Описание товара: Блокнот 13",
+      "price": 102700,
+      "category": "paper",
+      "stock": 0,
+      "is_active": 1,
+      "created_at": "2026-09-24T13:55:18.886Z",
+      "updated_at": "2026-09-24T13:55:18.886Z"
+    },
+    {
+      "id": 14,
+      "name": "Блокнот 14",
+      "description": "Описание товара: Блокнот 14",
+      "price": 110600,
+      "category": "pens",
+      "stock": 1,
+      "is_active": 1,
+      "created_at": "2026-09-23T13:55:18.887Z",
+      "updated_at": "2026-09-23T13:55:18.887Z"
+    },
+    {
+      "id": 15,
+      "name": "Блокнот 15",
+      "description": "Описание товара: Блокнот 15",
+      "price": 118500,
+      "category": "notebooks",
+      "stock": 10,
+      "is_active": 1,
+      "created_at": "2026-09-22T13:55:18.887Z",
+      "updated_at": "2026-09-22T13:55:18.887Z"
+    },
+    {
+      "id": 16,
+      "name": "Бумага A4 пачка 16",
+      "description": "Описание товара: Бумага A4 пачка 16",
+      "price": 126400,
+      "category": "other",
+      "stock": 999,
+      "is_active": 1,
+      "created_at": "2026-09-21T13:55:18.887Z",
+      "updated_at": "2026-09-21T13:55:18.887Z"
+    },
+    {
+      "id": 17,
+      "name": "Бумага A4 пачка 17",
+      "description": "Описание товара: Бумага A4 пачка 17",
+      "price": 134300,
+      "category": "paper",
+      "stock": 0,
+      "is_active": 1,
+      "created_at": "2026-09-20T13:55:18.887Z",
+      "updated_at": "2026-09-20T13:55:18.887Z"
+    },
+    {
+      "id": 18,
+      "name": "Бумага A4 пачка 18",
+      "description": "Описание товара: Бумага A4 пачка 18",
+      "price": 142200,
+      "category": "pens",
+      "stock": 1,
+      "is_active": 1,
+      "created_at": "2026-09-19T13:55:18.887Z",
+      "updated_at": "2026-09-19T13:55:18.887Z"
+    },
+    {
+      "id": 19,
+      "name": "Бумага A4 пачка 19",
+      "description": "Описание товара: Бумага A4 пачка 19",
+      "price": 150100,
+      "category": "notebooks",
+      "stock": 10,
+      "is_active": 1,
+      "created_at": "2026-09-18T13:55:18.887Z",
+      "updated_at": "2026-09-18T13:55:18.887Z"
+    },
+    {
+      "id": 20,
+      "name": "Бумага A4 пачка 20",
+      "description": "Описание товара: Бумага A4 пачка 20",
+      "price": 158000,
+      "category": "other",
+      "stock": 999,
+      "is_active": 1,
+      "created_at": "2026-09-17T13:55:18.887Z",
+      "updated_at": "2026-09-17T13:55:18.887Z"
+    },
+    {
+      "id": 21,
+      "name": "Канцелярия образец 21",
+      "description": "Описание товара: Канцелярия образец 21",
+      "price": 165900,
+      "category": "paper",
+      "stock": 0,
+      "is_active": 1,
+      "created_at": "2026-09-16T13:55:18.887Z",
+      "updated_at": "2026-09-16T13:55:18.887Z"
+    },
+    {
+      "id": 22,
+      "name": "Канцелярия образец 22",
+      "description": "Описание товара: Канцелярия образец 22",
+      "price": 173800,
+      "category": "pens",
+      "stock": 1,
+      "is_active": 1,
+      "created_at": "2026-09-15T13:55:18.887Z",
+      "updated_at": "2026-09-15T13:55:18.887Z"
+    },
+    {
+      "id": 23,
+      "name": "Канцелярия образец 23",
+      "description": "Описание товара: Канцелярия образец 23",
+      "price": 181700,
+      "category": "notebooks",
+      "stock": 10,
+      "is_active": 1,
+      "created_at": "2026-09-14T13:55:18.887Z",
+      "updated_at": "2026-09-14T13:55:18.887Z"
+    },
+    {
+      "id": 24,
+      "name": "Канцелярия образец 24",
+      "description": "Описание товара: Канцелярия образец 24",
+      "price": 189600,
+      "category": "other",
+      "stock": 999,
+      "is_active": 1,
+      "created_at": "2026-09-13T13:55:18.887Z",
+      "updated_at": "2026-09-13T13:55:18.887Z"
+    },
+    {
+      "id": 25,
+      "name": "Канцелярия образец 25",
+      "description": "Описание товара: Канцелярия образец 25",
+      "price": 197500,
+      "category": "paper",
+      "stock": 0,
+      "is_active": 1,
+      "created_at": "2026-09-12T13:55:18.887Z",
+      "updated_at": "2026-09-12T13:55:18.887Z"
+    },
+    {
+      "id": 26,
+      "name": "Скрытый товар 1",
+      "description": "Этот товар снят с витрины.",
+      "price": 10100,
+      "category": "other",
+      "stock": 5,
+      "is_active": 0,
+      "created_at": "2026-09-06T13:55:18.887Z",
+      "updated_at": "2026-09-06T13:55:18.887Z"
+    },
+    {
+      "id": 27,
+      "name": "Скрытый товар 2",
+      "description": "Этот товар снят с витрины.",
+      "price": 10200,
+      "category": "other",
+      "stock": 5,
+      "is_active": 0,
+      "created_at": "2026-09-05T13:55:18.887Z",
+      "updated_at": "2026-09-05T13:55:18.887Z"
+    }
+  ],
+  "audit_log": [],
+  "seq": {
+    "users": 3,
+    "sessions": 0,
+    "products": 27,
+    "audit_log": 0
+  }
+}
