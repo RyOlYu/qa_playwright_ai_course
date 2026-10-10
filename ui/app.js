@@ -869,7 +869,9 @@ async function renderAdmin(params = {}) {
     </div>
   `);
 
-    let editingId = params.edit ? Number(params.edit) : null;
+
+    const editRaw = params.edit ?? new URLSearchParams(location.search).get("edit");
+    let editingId = editRaw ? Number(editRaw) : null;
 
     const form = document.querySelector('[data-testid="admin-product-form"]');
     const resetButton = document.querySelector('[data-testid="admin-product-reset"]');

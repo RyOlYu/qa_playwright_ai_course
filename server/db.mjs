@@ -46,7 +46,7 @@ function makeUser(db, login, password, fields) {
     return user;
 }
 
-function seed(dataFile) {
+export function buildSeedDb(dataFile) {
     const db = {
         users: [],
         sessions: [],
@@ -135,6 +135,12 @@ function seed(dataFile) {
         db.products.push(product);
     }
 
+    return db;
+}
+
+
+export function seed(dataFile) {
+    const db = buildSeedDb();
     saveDb(dataFile, db);
     return db;
 }
@@ -180,11 +186,3 @@ export function sendJson(res, status, body) {
 
     res.end(json);
 }
-// module.exports = {
-//     loadDb,
-//     saveDb,
-//     nextId,
-//     audit,
-//     nowIso,
-//     hashPassword,
-// };

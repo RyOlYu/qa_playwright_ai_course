@@ -1,13 +1,16 @@
+import { program } from "commander";
 import * as fs from "node:fs";
 import * as http from "node:http";
 import * as path from "node:path";
-
 import { createSession, parseSid, publicUser, requireAdmin, requireUser, sendError } from "./auth.mjs";
-import { audit, hashPassword, loadDb, nextId, nowIso, saveDb, sendJson } from "./db.mjs";
+import { audit, hashPassword, loadDb, nextId, nowIso, saveDb, sendJson, buildSeedDb } from "./db.mjs";
 
-const PORT = process.env.PORT || 3000;
+program.option('--port <number>', 'server port number');
+program.parse(process.argv);
+const opts = program.opts();
+
+const PORT = opts.port ?? 3000;
 const __dirname = import.meta.dirname;
-// const PUBLIC_DIR = path.join(__dirname, "..", "public");
 const DATA_FILE = path.join(__dirname, "..", "data", "app.json");
 
 const db = loadDb(DATA_FILE);
@@ -317,11 +320,15 @@ async function serveStatic(req, res, url) {
     } catch {
         pathname = url.pathname;
     }
-    console.log('------ url', url);
     const ui = path.join(__dirname, '..', 'ui');
 
-
-    if (req.url === '/') {
+    const exactRoutes = [
+        "/login",
+        "/catalog",
+        "/profile",
+        "/admin/products"
+    ];
+    if (req.url === '/' || exactRoutes.some(r => req.url.includes(r))) {
         let indexHtmlPath = path.join(ui, "index.html");
         const data = (await fs.promises.readFile(indexHtmlPath)).toString();
         console.log('--------- index html', data);
@@ -332,8 +339,7 @@ async function serveStatic(req, res, url) {
         res.end(data);
     } else if (req.url.includes('app.js')) {
         let appJsPath = path.join(ui, "app.js");
-        const ff = fs.readFileSync(appJsPath).toString()
-        // const data = (await fs.promises.readFile(appJsPath)).toString();
+        const ff = fs.readFileSync(appJsPath).toString();
         console.log('))))))))))))) js', ff);
         res.writeHead(200, {
             "content-type": mimeForFile(appJsPath),
@@ -379,6 +385,16 @@ const server = http.createServer(async (req, res) => {
         }
 
         if (await handleDebug(req, res)) {
+            return;
+        }
+
+
+
+        if (req.method === 'POST' && req.url.includes("api/_qa/reset")) {
+            Object.assign(db, buildSeedDb());   // пересев в памяти
+            save();                              // и файл пересоздан с нуля
+            res.writeHead(204);
+            res.end();
             return;
         }
 

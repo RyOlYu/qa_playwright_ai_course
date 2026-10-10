@@ -6,12 +6,15 @@
   "author": "Boris_Medoshin(Tomheten)",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start:server": "tsx ./server/server.mjs"
+    "start:one": "playwright test --config=./only-one-playwright.config.ts --debug",
+    "start:ci": "playwright test --config=./playwright.ci.config.ts",
+    "start:ui": "playwright test --ui --config=./playwright.ci.config.ts",
+    "start:server": "tsx ./server/server.mjs --port=3003"
   },
   "devDependencies": {
     "tsx": "4.23.15",
-    "@playwright/test": "~1.60.0",
+    "commander": "15.0.0",
+    "@playwright/test": "~1.64.0",
     "@types/node": "^26.0.0",
     "globals": "~17.6.0",
     "typescript": "6.0.3",
