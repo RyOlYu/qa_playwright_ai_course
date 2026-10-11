@@ -7,8 +7,8 @@
   "type": "module",
   "scripts": {
     "start:one": "playwright test --config=./only-one-playwright.config.ts --debug",
-    "start:ci": "playwright test --config=./playwright.ci.config.ts",
     "start:ui": "playwright test --ui --config=./playwright.ci.config.ts",
+    "start:ci": "playwright test --config=./playwright.ci.config.ts",
     "start:server": "tsx ./server/server.mjs --port=3003"
   },
   "devDependencies": {
