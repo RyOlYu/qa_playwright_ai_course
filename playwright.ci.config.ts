@@ -2,13 +2,13 @@ import { defineConfig } from '@playwright/test';
 import { join } from 'node:path';
 
 
-const pathToChrome = '/home/Tomheten/chrome-linux64/chrome';
+const pathToChrome = '<<need_path>>';
 if (!pathToChrome) {
     throw new Error('Should set path to Chrome(Yandex or other Chromium-based browser)');
 }
 const __dirname = import.meta.dirname;
 export default defineConfig({
-    testDir: join(__dirname, 'tests', 'examples'),
+    testDir: join(__dirname, 'tests'),
     reporter: [
         ['line'],
         ['html', {
@@ -18,10 +18,10 @@ export default defineConfig({
     ],
     timeout: 500_000,
     globalTimeout: 500_000,
-    webServer: {
-        reuseExistingServer: true,
-        command: 'npm run start:server -- --port=3004'
-    },
+    // webServer: {
+    //     reuseExistingServer: true,
+    //     command: 'npm run start:server -- --port=3004'
+    // },
     use: {
         screenshot: 'only-on-failure',
         trace: 'retain-on-failure',

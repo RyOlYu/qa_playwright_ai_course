@@ -6,9 +6,10 @@
   "author": "Boris_Medoshin(Tomheten)",
   "type": "module",
   "scripts": {
-    "start:one": "playwright test --config=./only-one-playwright.config.ts --debug",
-    "start:ui": "playwright test --ui --config=./playwright.ci.config.ts",
-    "start:ci": "playwright test --config=./playwright.ci.config.ts",
+    "playwright": "playwright",
+    "start:one": "tsx run-one.ts",
+    "start:ui": "tsx run-ui.ts",
+    "start:ci": "tsx run-ci.ts",
     "start:server": "tsx ./server/server.mjs --port=3003"
   },
   "devDependencies": {
@@ -20,7 +21,7 @@
     "typescript": "6.0.3",
     "vite": "8.3.3",
     "vite-node": "6.0.0",
-    "wait-on": "9.5.1",
+    "wait-on": "9.0.10",
     "playwright-recast": "^0.23.0"
   }
 }

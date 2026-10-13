@@ -3,7 +3,7 @@ import * as fs from "node:fs";
 import * as http from "node:http";
 import * as path from "node:path";
 import { createSession, parseSid, publicUser, requireAdmin, requireUser, sendError } from "./auth.mjs";
-import { audit, hashPassword, loadDb, nextId, nowIso, saveDb, sendJson, buildSeedDb } from "./db.mjs";
+import { audit, buildSeedDb, hashPassword, loadDb, nextId, nowIso, saveDb, sendJson } from "./db.mjs";
 
 program.option('--port <number>', 'server port number');
 program.parse(process.argv);
@@ -331,7 +331,6 @@ async function serveStatic(req, res, url) {
     if (req.url === '/' || exactRoutes.some(r => req.url.includes(r))) {
         let indexHtmlPath = path.join(ui, "index.html");
         const data = (await fs.promises.readFile(indexHtmlPath)).toString();
-        console.log('--------- index html', data);
         // res.writeHead(200, {
         //     "content-type": mimeForFile(indexHtmlPath),
         // });
@@ -340,7 +339,6 @@ async function serveStatic(req, res, url) {
     } else if (req.url.includes('app.js')) {
         let appJsPath = path.join(ui, "app.js");
         const ff = fs.readFileSync(appJsPath).toString();
-        console.log('))))))))))))) js', ff);
         res.writeHead(200, {
             "content-type": mimeForFile(appJsPath),
         });
@@ -378,7 +376,10 @@ async function readBody(req) {
 const server = http.createServer(async (req, res) => {
     try {
         const url = new URL(req.url, `http://${req.headers.host ?? "localhost"}`);
-
+        if (req.url === '/' && req.method === 'HEAD') {
+            res.end('ok');
+        }
+        
         if (!url.pathname.startsWith("/api/")) {
             await serveStatic(req, res, url);
             return;
@@ -396,6 +397,13 @@ const server = http.createServer(async (req, res) => {
             res.writeHead(204);
             res.end();
             return;
+        }
+
+
+        if (req.method === 'POST' && req.url.includes("api/_stop_server")) {
+            console.log('---------- stop server' );
+            server.close();
+            process.kill();
         }
 
         const parts = url.pathname.split("/").filter(Boolean);

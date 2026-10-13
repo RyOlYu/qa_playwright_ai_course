@@ -13,7 +13,6 @@ export const test = base.extend<TestFixtures>({
         // use() вызывается перед каждым тестом
         await use(async () => {
             const response = await request.get("_qa/reset");
-            debugger;
             expect(response.status()).toBe(204);
         });
     },
