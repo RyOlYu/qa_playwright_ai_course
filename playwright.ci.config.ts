@@ -2,7 +2,7 @@ import { defineConfig } from '@playwright/test';
 import { join } from 'node:path';
 
 
-const pathToChrome = '<<need_path>>';
+const pathToChrome = '/usr/bin/google-chrome';
 if (!pathToChrome) {
     throw new Error('Should set path to Chrome(Yandex or other Chromium-based browser)');
 }
