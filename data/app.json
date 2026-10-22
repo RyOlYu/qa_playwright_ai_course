@@ -340,11 +340,110 @@
       "updated_at": "2026-09-14T09:19:30.511Z"
     }
   ],
-  "audit_log": [],
+  "audit_log": [
+    {
+      "id": 1,
+      "user_id": 1,
+      "action": "login",
+      "payload": "{\"login\":\"anna\"}",
+      "created_at": "2026-10-22T13:43:26.821Z"
+    },
+    {
+      "id": 2,
+      "user_id": 1,
+      "action": "logout",
+      "payload": "{}",
+      "created_at": "2026-10-22T13:45:02.538Z"
+    },
+    {
+      "id": 3,
+      "user_id": 3,
+      "action": "login",
+      "payload": "{\"login\":\"kira\"}",
+      "created_at": "2026-10-22T13:45:14.640Z"
+    },
+    {
+      "id": 4,
+      "user_id": 3,
+      "action": "logout",
+      "payload": "{}",
+      "created_at": "2026-10-22T13:45:50.065Z"
+    },
+    {
+      "id": 5,
+      "user_id": 1,
+      "action": "login",
+      "payload": "{\"login\":\"anna\"}",
+      "created_at": "2026-10-22T13:59:04.413Z"
+    },
+    {
+      "id": 6,
+      "user_id": 1,
+      "action": "logout",
+      "payload": "{}",
+      "created_at": "2026-10-22T14:02:24.375Z"
+    },
+    {
+      "id": 7,
+      "user_id": 3,
+      "action": "login",
+      "payload": "{\"login\":\"kira\"}",
+      "created_at": "2026-10-22T14:23:50.815Z"
+    },
+    {
+      "id": 8,
+      "user_id": 3,
+      "action": "logout",
+      "payload": "{}",
+      "created_at": "2026-10-22T14:23:59.511Z"
+    },
+    {
+      "id": 9,
+      "user_id": 1,
+      "action": "login",
+      "payload": "{\"login\":\"anna\"}",
+      "created_at": "2026-10-22T14:35:30.763Z"
+    },
+    {
+      "id": 10,
+      "user_id": 1,
+      "action": "logout",
+      "payload": "{}",
+      "created_at": "2026-10-22T14:58:02.937Z"
+    },
+    {
+      "id": 11,
+      "user_id": 3,
+      "action": "login",
+      "payload": "{\"login\":\"kira\"}",
+      "created_at": "2026-10-22T14:58:31.857Z"
+    },
+    {
+      "id": 12,
+      "user_id": 3,
+      "action": "logout",
+      "payload": "{}",
+      "created_at": "2026-10-22T15:00:18.882Z"
+    },
+    {
+      "id": 13,
+      "user_id": 3,
+      "action": "login",
+      "payload": "{\"login\":\"kira\"}",
+      "created_at": "2026-10-22T15:03:25.198Z"
+    },
+    {
+      "id": 14,
+      "user_id": 3,
+      "action": "logout",
+      "payload": "{}",
+      "created_at": "2026-10-22T15:07:01.085Z"
+    }
+  ],
   "seq": {
     "users": 3,
-    "sessions": 0,
+    "sessions": 7,
     "products": 27,
-    "audit_log": 0
+    "audit_log": 14
   }
 }
