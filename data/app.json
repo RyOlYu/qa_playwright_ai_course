@@ -40,7 +40,15 @@
       "updated_at": "2026-10-16T09:19:30.511Z"
     }
   ],
-  "sessions": [],
+  "sessions": [
+    {
+      "id": 8,
+      "user_id": 1,
+      "token": "aa8039d45e08c96131c16868119a8488ff073ece6a286565f0525a7f6f01dbfd",
+      "expires_at": "2026-10-23T13:20:57.697Z",
+      "created_at": "2026-10-23T11:20:57.697Z"
+    }
+  ],
   "products": [
     {
       "id": 1,
@@ -438,12 +446,19 @@
       "action": "logout",
       "payload": "{}",
       "created_at": "2026-10-22T15:07:01.085Z"
+    },
+    {
+      "id": 15,
+      "user_id": 1,
+      "action": "login",
+      "payload": "{\"login\":\"anna\"}",
+      "created_at": "2026-10-23T11:20:57.697Z"
     }
   ],
   "seq": {
     "users": 3,
-    "sessions": 7,
+    "sessions": 8,
     "products": 27,
-    "audit_log": 14
+    "audit_log": 15
   }
 }
