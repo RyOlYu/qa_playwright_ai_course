@@ -1,4 +1,4 @@
-import { execSync, spawn } from 'node:child_process';
+import { exec, execSync, spawn } from 'node:child_process';
 import { exit } from 'node:process';
 //@ts-ignore
 import waitOn from 'wait-on';
@@ -9,13 +9,11 @@ async function run() {
         await fetch('http://localhost:' + port + '/api/_stop_server', { method: 'POST', body: '' });
     } catch (error) {
     }
-    const process = spawn(`npm`, [
-        'run',
-        'start:server',
-        '--',
-        '--port=' + port
-    ], { stdio: 'inherit' });
+    
+    const process = exec(`npm run start:server -- --port=` + port);
+
     await waitOn({ resources: ['http://localhost:' + port], timeout: 10_000 },);
+    
     execSync(
         'npm run playwright -- test --config=./only-one-playwright.config.ts --debug',
         { stdio: 'inherit' }

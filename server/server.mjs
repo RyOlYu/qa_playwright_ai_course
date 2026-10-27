@@ -342,8 +342,20 @@ async function serveStatic(req, res, url) {
         res.writeHead(200, {
             "content-type": mimeForFile(appJsPath),
         });
-
         res.end(ff);
+    } else if (req.url.includes('bootstrap.js')) {
+        let appJsPath = path.join(ui, "bootstrap.js");
+        res.writeHead(200, {
+            "content-type": mimeForFile(appJsPath),
+        });
+        res.end(fs.readFileSync(appJsPath).toString());
+    } else if (req.url.includes('bootstrap.css')) {
+        let appJsPath = path.join(ui, "bootstrap.css");
+        res.writeHead(200, {
+            "content-type": mimeForFile(appJsPath),
+        });
+        res.end(fs.readFileSync(appJsPath).toString());
+
     } else {
         sendError(res, 404, "NOT_FOUND", "Не найдено");
     }
