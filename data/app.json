@@ -47,6 +47,55 @@
       "token": "a52d160a96e76c501f23952271e4fb75e675c3c458c4818e45b5119e41b74287",
       "expires_at": "2026-10-28T09:32:50.942Z",
       "created_at": "2026-10-28T07:32:50.942Z"
+    },
+    {
+      "id": 2,
+      "user_id": 1,
+      "token": "d372dc6f32712a433bc855f04a97e2413ca251464bade2b5bba5ffc18a857836",
+      "expires_at": "2026-10-28T09:49:09.347Z",
+      "created_at": "2026-10-28T07:49:09.347Z"
+    },
+    {
+      "id": 3,
+      "user_id": 1,
+      "token": "e5692e424e46689cf25da0403f29a34966ef9771b568cc6cbf8d8886f1cac66b",
+      "expires_at": "2026-10-28T10:19:40.099Z",
+      "created_at": "2026-10-28T08:19:40.099Z"
+    },
+    {
+      "id": 4,
+      "user_id": 1,
+      "token": "d2a037fbbadef99c844417e4f397c97d2d7046b93f2c0222ca6d7f983919fd35",
+      "expires_at": "2026-10-28T10:20:37.940Z",
+      "created_at": "2026-10-28T08:20:37.940Z"
+    },
+    {
+      "id": 5,
+      "user_id": 1,
+      "token": "6c47b7846c9f5b40b9b0d15c581c94f450803e58c4de98be758edfa64b9d0905",
+      "expires_at": "2026-10-28T10:21:34.462Z",
+      "created_at": "2026-10-28T08:21:34.462Z"
+    },
+    {
+      "id": 6,
+      "user_id": 1,
+      "token": "a1c3fdd934a0baaf17fa75e78e79055ef1565bf4cf519882434572d2c5c767be",
+      "expires_at": "2026-10-28T10:22:49.939Z",
+      "created_at": "2026-10-28T08:22:49.939Z"
+    },
+    {
+      "id": 7,
+      "user_id": 1,
+      "token": "26f07ce4b9af5d8a84ea771f4acf338a6e2e1c560b7ebdee799604ee10d00d7c",
+      "expires_at": "2026-10-28T10:23:11.553Z",
+      "created_at": "2026-10-28T08:23:11.553Z"
+    },
+    {
+      "id": 8,
+      "user_id": 1,
+      "token": "0c1768748e1e3e286d5ffea6d0cf72f3d84e49f42e6ce84ec0b403589eaf520e",
+      "expires_at": "2026-10-28T10:24:12.027Z",
+      "created_at": "2026-10-28T08:24:12.027Z"
     }
   ],
   "products": [
@@ -355,12 +404,61 @@
       "action": "login",
       "payload": "{\"login\":\"anna\"}",
       "created_at": "2026-10-28T07:32:50.942Z"
+    },
+    {
+      "id": 2,
+      "user_id": 1,
+      "action": "login",
+      "payload": "{\"login\":\"anna\"}",
+      "created_at": "2026-10-28T07:49:09.347Z"
+    },
+    {
+      "id": 3,
+      "user_id": 1,
+      "action": "login",
+      "payload": "{\"login\":\"anna\"}",
+      "created_at": "2026-10-28T08:19:40.099Z"
+    },
+    {
+      "id": 4,
+      "user_id": 1,
+      "action": "login",
+      "payload": "{\"login\":\"anna\"}",
+      "created_at": "2026-10-28T08:20:37.940Z"
+    },
+    {
+      "id": 5,
+      "user_id": 1,
+      "action": "login",
+      "payload": "{\"login\":\"anna\"}",
+      "created_at": "2026-10-28T08:21:34.462Z"
+    },
+    {
+      "id": 6,
+      "user_id": 1,
+      "action": "login",
+      "payload": "{\"login\":\"anna\"}",
+      "created_at": "2026-10-28T08:22:49.939Z"
+    },
+    {
+      "id": 7,
+      "user_id": 1,
+      "action": "login",
+      "payload": "{\"login\":\"anna\"}",
+      "created_at": "2026-10-28T08:23:11.553Z"
+    },
+    {
+      "id": 8,
+      "user_id": 1,
+      "action": "login",
+      "payload": "{\"login\":\"anna\"}",
+      "created_at": "2026-10-28T08:24:12.027Z"
     }
   ],
   "seq": {
     "users": 3,
-    "sessions": 1,
+    "sessions": 8,
     "products": 27,
-    "audit_log": 1
+    "audit_log": 8
   }
 }
