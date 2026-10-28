@@ -4,43 +4,51 @@
       "id": 1,
       "login": "anna",
       "email": "anna@example.com",
-      "password_salt": "4e9a97f48af5b64d",
-      "password_hash": "12825536ea60673bf9b506ad0fd68faa5676a374fd0db46f41c037f34228abf3",
+      "password_salt": "23703912e25b4217",
+      "password_hash": "d1a49c1b5c1edc2e64465819708781659bd9959404960582c0a325bb0bd577de",
       "first_name": "Анна",
       "last_name": "Покупателева",
       "role": "user",
       "is_blocked": 0,
-      "created_at": "2026-10-27T07:48:32.159Z",
-      "updated_at": "2026-10-27T07:48:32.159Z"
+      "created_at": "2026-10-28T07:32:49.034Z",
+      "updated_at": "2026-10-28T07:32:49.034Z"
     },
     {
       "id": 2,
       "login": "boris",
       "email": "boris@example.com",
-      "password_salt": "81611621b56a084e",
-      "password_hash": "9832a53f6a3f9dcf7c3aeabc99f541a72994c7a32b2f2925d12c9b8c842789c5",
+      "password_salt": "9d030b7f7387671b",
+      "password_hash": "0576b21c5d564d0d07f98b0c90758530ad08fc0fd3678819670f3fd5deef6b0d",
       "first_name": "Борис",
       "last_name": "Бывший",
       "role": "user",
       "is_blocked": 1,
-      "created_at": "2026-10-27T07:48:32.159Z",
-      "updated_at": "2026-10-27T07:48:32.159Z"
+      "created_at": "2026-10-28T07:32:49.034Z",
+      "updated_at": "2026-10-28T07:32:49.034Z"
     },
     {
       "id": 3,
       "login": "kira",
       "email": "kira@example.com",
-      "password_salt": "6adb00c53871d034",
-      "password_hash": "1c1368f71152b6125dd3aa3dac773443803d0d39b9905436d3343114891c627b",
+      "password_salt": "e789f09d0f5af0cf",
+      "password_hash": "a7c088dd76b89ab8c5691dfdcdc5c56d0f11ee5ed26b8255cd0b28019e8a3ad3",
       "first_name": "Кира",
       "last_name": "Админова",
       "role": "admin",
       "is_blocked": 0,
-      "created_at": "2026-10-27T07:48:32.159Z",
-      "updated_at": "2026-10-27T07:48:32.159Z"
+      "created_at": "2026-10-28T07:32:49.034Z",
+      "updated_at": "2026-10-28T07:32:49.034Z"
     }
   ],
-  "sessions": [],
+  "sessions": [
+    {
+      "id": 1,
+      "user_id": 1,
+      "token": "a52d160a96e76c501f23952271e4fb75e675c3c458c4818e45b5119e41b74287",
+      "expires_at": "2026-10-28T09:32:50.942Z",
+      "created_at": "2026-10-28T07:32:50.942Z"
+    }
+  ],
   "products": [
     {
       "id": 1,
@@ -50,8 +58,8 @@
       "category": "paper",
       "stock": 0,
       "is_active": 1,
-      "created_at": "2026-10-26T07:48:32.159Z",
-      "updated_at": "2026-10-26T07:48:32.159Z"
+      "created_at": "2026-10-27T07:32:49.034Z",
+      "updated_at": "2026-10-27T07:32:49.034Z"
     },
     {
       "id": 2,
@@ -61,8 +69,8 @@
       "category": "pens",
       "stock": 1,
       "is_active": 1,
-      "created_at": "2026-10-25T07:48:32.159Z",
-      "updated_at": "2026-10-25T07:48:32.159Z"
+      "created_at": "2026-10-26T07:32:49.034Z",
+      "updated_at": "2026-10-26T07:32:49.034Z"
     },
     {
       "id": 3,
@@ -72,8 +80,8 @@
       "category": "notebooks",
       "stock": 10,
       "is_active": 1,
-      "created_at": "2026-10-24T07:48:32.159Z",
-      "updated_at": "2026-10-24T07:48:32.159Z"
+      "created_at": "2026-10-25T07:32:49.034Z",
+      "updated_at": "2026-10-25T07:32:49.034Z"
     },
     {
       "id": 4,
@@ -83,8 +91,8 @@
       "category": "other",
       "stock": 999,
       "is_active": 1,
-      "created_at": "2026-10-23T07:48:32.159Z",
-      "updated_at": "2026-10-23T07:48:32.159Z"
+      "created_at": "2026-10-24T07:32:49.034Z",
+      "updated_at": "2026-10-24T07:32:49.034Z"
     },
     {
       "id": 5,
@@ -94,8 +102,8 @@
       "category": "paper",
       "stock": 0,
       "is_active": 1,
-      "created_at": "2026-10-22T07:48:32.159Z",
-      "updated_at": "2026-10-22T07:48:32.159Z"
+      "created_at": "2026-10-23T07:32:49.034Z",
+      "updated_at": "2026-10-23T07:32:49.034Z"
     },
     {
       "id": 6,
@@ -105,8 +113,8 @@
       "category": "pens",
       "stock": 1,
       "is_active": 1,
-      "created_at": "2026-10-21T07:48:32.159Z",
-      "updated_at": "2026-10-21T07:48:32.159Z"
+      "created_at": "2026-10-22T07:32:49.034Z",
+      "updated_at": "2026-10-22T07:32:49.034Z"
     },
     {
       "id": 7,
@@ -116,8 +124,8 @@
       "category": "notebooks",
       "stock": 10,
       "is_active": 1,
-      "created_at": "2026-10-20T07:48:32.159Z",
-      "updated_at": "2026-10-20T07:48:32.159Z"
+      "created_at": "2026-10-21T07:32:49.034Z",
+      "updated_at": "2026-10-21T07:32:49.034Z"
     },
     {
       "id": 8,
@@ -127,8 +135,8 @@
       "category": "other",
       "stock": 999,
       "is_active": 1,
-      "created_at": "2026-10-19T07:48:32.159Z",
-      "updated_at": "2026-10-19T07:48:32.159Z"
+      "created_at": "2026-10-20T07:32:49.034Z",
+      "updated_at": "2026-10-20T07:32:49.034Z"
     },
     {
       "id": 9,
@@ -138,8 +146,8 @@
       "category": "paper",
       "stock": 0,
       "is_active": 1,
-      "created_at": "2026-10-18T07:48:32.159Z",
-      "updated_at": "2026-10-18T07:48:32.159Z"
+      "created_at": "2026-10-19T07:32:49.034Z",
+      "updated_at": "2026-10-19T07:32:49.034Z"
     },
     {
       "id": 10,
@@ -149,8 +157,8 @@
       "category": "pens",
       "stock": 1,
       "is_active": 1,
-      "created_at": "2026-10-17T07:48:32.159Z",
-      "updated_at": "2026-10-17T07:48:32.159Z"
+      "created_at": "2026-10-18T07:32:49.034Z",
+      "updated_at": "2026-10-18T07:32:49.034Z"
     },
     {
       "id": 11,
@@ -160,8 +168,8 @@
       "category": "notebooks",
       "stock": 10,
       "is_active": 1,
-      "created_at": "2026-10-16T07:48:32.159Z",
-      "updated_at": "2026-10-16T07:48:32.159Z"
+      "created_at": "2026-10-17T07:32:49.034Z",
+      "updated_at": "2026-10-17T07:32:49.034Z"
     },
     {
       "id": 12,
@@ -171,8 +179,8 @@
       "category": "other",
       "stock": 999,
       "is_active": 1,
-      "created_at": "2026-10-15T07:48:32.159Z",
-      "updated_at": "2026-10-15T07:48:32.159Z"
+      "created_at": "2026-10-16T07:32:49.034Z",
+      "updated_at": "2026-10-16T07:32:49.034Z"
     },
     {
       "id": 13,
@@ -182,8 +190,8 @@
       "category": "paper",
       "stock": 0,
       "is_active": 1,
-      "created_at": "2026-10-14T07:48:32.159Z",
-      "updated_at": "2026-10-14T07:48:32.159Z"
+      "created_at": "2026-10-15T07:32:49.034Z",
+      "updated_at": "2026-10-15T07:32:49.034Z"
     },
     {
       "id": 14,
@@ -193,8 +201,8 @@
       "category": "pens",
       "stock": 1,
       "is_active": 1,
-      "created_at": "2026-10-13T07:48:32.159Z",
-      "updated_at": "2026-10-13T07:48:32.159Z"
+      "created_at": "2026-10-14T07:32:49.034Z",
+      "updated_at": "2026-10-14T07:32:49.034Z"
     },
     {
       "id": 15,
@@ -204,8 +212,8 @@
       "category": "notebooks",
       "stock": 10,
       "is_active": 1,
-      "created_at": "2026-10-12T07:48:32.159Z",
-      "updated_at": "2026-10-12T07:48:32.159Z"
+      "created_at": "2026-10-13T07:32:49.034Z",
+      "updated_at": "2026-10-13T07:32:49.034Z"
     },
     {
       "id": 16,
@@ -215,8 +223,8 @@
       "category": "other",
       "stock": 999,
       "is_active": 1,
-      "created_at": "2026-10-11T07:48:32.159Z",
-      "updated_at": "2026-10-11T07:48:32.159Z"
+      "created_at": "2026-10-12T07:32:49.035Z",
+      "updated_at": "2026-10-12T07:32:49.035Z"
     },
     {
       "id": 17,
@@ -226,8 +234,8 @@
       "category": "paper",
       "stock": 0,
       "is_active": 1,
-      "created_at": "2026-10-10T07:48:32.159Z",
-      "updated_at": "2026-10-10T07:48:32.159Z"
+      "created_at": "2026-10-11T07:32:49.035Z",
+      "updated_at": "2026-10-11T07:32:49.035Z"
     },
     {
       "id": 18,
@@ -237,8 +245,8 @@
       "category": "pens",
       "stock": 1,
       "is_active": 1,
-      "created_at": "2026-10-09T07:48:32.159Z",
-      "updated_at": "2026-10-09T07:48:32.159Z"
+      "created_at": "2026-10-10T07:32:49.035Z",
+      "updated_at": "2026-10-10T07:32:49.035Z"
     },
     {
       "id": 19,
@@ -248,8 +256,8 @@
       "category": "notebooks",
       "stock": 10,
       "is_active": 1,
-      "created_at": "2026-10-08T07:48:32.159Z",
-      "updated_at": "2026-10-08T07:48:32.159Z"
+      "created_at": "2026-10-09T07:32:49.035Z",
+      "updated_at": "2026-10-09T07:32:49.035Z"
     },
     {
       "id": 20,
@@ -259,8 +267,8 @@
       "category": "other",
       "stock": 999,
       "is_active": 1,
-      "created_at": "2026-10-07T07:48:32.159Z",
-      "updated_at": "2026-10-07T07:48:32.159Z"
+      "created_at": "2026-10-08T07:32:49.035Z",
+      "updated_at": "2026-10-08T07:32:49.035Z"
     },
     {
       "id": 21,
@@ -270,8 +278,8 @@
       "category": "paper",
       "stock": 0,
       "is_active": 1,
-      "created_at": "2026-10-06T07:48:32.159Z",
-      "updated_at": "2026-10-06T07:48:32.159Z"
+      "created_at": "2026-10-07T07:32:49.035Z",
+      "updated_at": "2026-10-07T07:32:49.035Z"
     },
     {
       "id": 22,
@@ -281,8 +289,8 @@
       "category": "pens",
       "stock": 1,
       "is_active": 1,
-      "created_at": "2026-10-05T07:48:32.159Z",
-      "updated_at": "2026-10-05T07:48:32.159Z"
+      "created_at": "2026-10-06T07:32:49.035Z",
+      "updated_at": "2026-10-06T07:32:49.035Z"
     },
     {
       "id": 23,
@@ -292,8 +300,8 @@
       "category": "notebooks",
       "stock": 10,
       "is_active": 1,
-      "created_at": "2026-10-04T07:48:32.159Z",
-      "updated_at": "2026-10-04T07:48:32.159Z"
+      "created_at": "2026-10-05T07:32:49.035Z",
+      "updated_at": "2026-10-05T07:32:49.035Z"
     },
     {
       "id": 24,
@@ -303,8 +311,8 @@
       "category": "other",
       "stock": 999,
       "is_active": 1,
-      "created_at": "2026-10-03T07:48:32.159Z",
-      "updated_at": "2026-10-03T07:48:32.159Z"
+      "created_at": "2026-10-04T07:32:49.035Z",
+      "updated_at": "2026-10-04T07:32:49.035Z"
     },
     {
       "id": 25,
@@ -314,8 +322,8 @@
       "category": "paper",
       "stock": 0,
       "is_active": 1,
-      "created_at": "2026-10-02T07:48:32.159Z",
-      "updated_at": "2026-10-02T07:48:32.159Z"
+      "created_at": "2026-10-03T07:32:49.035Z",
+      "updated_at": "2026-10-03T07:32:49.035Z"
     },
     {
       "id": 26,
@@ -325,8 +333,8 @@
       "category": "other",
       "stock": 5,
       "is_active": 0,
-      "created_at": "2026-09-26T07:48:32.159Z",
-      "updated_at": "2026-09-26T07:48:32.159Z"
+      "created_at": "2026-09-27T07:32:49.035Z",
+      "updated_at": "2026-09-27T07:32:49.035Z"
     },
     {
       "id": 27,
@@ -336,15 +344,23 @@
       "category": "other",
       "stock": 5,
       "is_active": 0,
-      "created_at": "2026-09-25T07:48:32.159Z",
-      "updated_at": "2026-09-25T07:48:32.159Z"
+      "created_at": "2026-09-26T07:32:49.035Z",
+      "updated_at": "2026-09-26T07:32:49.035Z"
     }
   ],
-  "audit_log": [],
+  "audit_log": [
+    {
+      "id": 1,
+      "user_id": 1,
+      "action": "login",
+      "payload": "{\"login\":\"anna\"}",
+      "created_at": "2026-10-28T07:32:50.942Z"
+    }
+  ],
   "seq": {
     "users": 3,
-    "sessions": 0,
+    "sessions": 1,
     "products": 27,
-    "audit_log": 0
+    "audit_log": 1
   }
 }
