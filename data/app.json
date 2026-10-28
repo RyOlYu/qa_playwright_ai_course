@@ -96,6 +96,13 @@
       "token": "0c1768748e1e3e286d5ffea6d0cf72f3d84e49f42e6ce84ec0b403589eaf520e",
       "expires_at": "2026-10-28T10:24:12.027Z",
       "created_at": "2026-10-28T08:24:12.027Z"
+    },
+    {
+      "id": 9,
+      "user_id": 1,
+      "token": "c555506346bb299287f335d93c2e2325b290d480e3f3fcd9e53f9f0d4fbdfb79",
+      "expires_at": "2026-10-28T15:54:17.473Z",
+      "created_at": "2026-10-28T13:54:17.473Z"
     }
   ],
   "products": [
@@ -453,12 +460,19 @@
       "action": "login",
       "payload": "{\"login\":\"anna\"}",
       "created_at": "2026-10-28T08:24:12.027Z"
+    },
+    {
+      "id": 9,
+      "user_id": 1,
+      "action": "login",
+      "payload": "{\"login\":\"anna\"}",
+      "created_at": "2026-10-28T13:54:17.473Z"
     }
   ],
   "seq": {
     "users": 3,
-    "sessions": 8,
+    "sessions": 9,
     "products": 27,
-    "audit_log": 8
+    "audit_log": 9
   }
 }
